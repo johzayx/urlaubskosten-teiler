@@ -45,7 +45,7 @@ def ausgabe_erfassen(teilnehmer, ausgaben):
 
 # Berechnung der Schulden
 def berechnung(teilnehmer, ausgaben):
-    saldo = {name: 0 for name in teilnehmer}
+    saldo={name: 0 for name in teilnehmer} #### spaces removed to check linter
 
     for ausgabe in ausgaben:
         betrag_pro_person = ausgabe["betrag"] / len(ausgabe["beteiligt"])
