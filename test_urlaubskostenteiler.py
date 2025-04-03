@@ -20,7 +20,7 @@ def test_berechnung():
     ]
 
     assert urlaubskostenteiler.berechnung(teilnehmer, ausgaben) == {
-        "Alice": 20,
+        "Alice": 10, ####changed from 20 to 10 to check test
         "Bob": 0,
         "Charlie": -20,
     }
